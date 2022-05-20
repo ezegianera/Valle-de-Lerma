@@ -1602,3 +1602,34 @@ body {
     }
 
 }
+
+/*________________________________________________________________________________*/
+
+/*ANIMACIONES*/
+
+/* Animacion del logo principal*/
+
+@keyframes rotar{
+    from {
+        transform: rotate(0);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.header__logo a img{
+    animation-name: rotar;
+    animation-delay: 1s;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+/* Animaciones para el menu - Extraidas de animate */
+
+.header__menu--item:hover {
+    animation: heartBeat;
+    animation-duration: 2s;
+}
